@@ -5,11 +5,11 @@
 --color-background:#F0F0F7; 
 --color-primary-lighter:#9871F5;
 --color-primary-light:#916BEA;
---color-primary:#8257E5;
+--color-primary:#894df8;
 --color-primary-dark:#774DD6;
 --color-primary-darker:#6842C2;
 --color-secondary:#04D361;
---color-secondary-dark:#04BF58;
+--color-secondary-dark:#75c096;
 --color-title-in-primary:#FFFFFF;
 --color-text-in-primary:#D4C2FF;
 --color-text-title:#32264D;
@@ -35,20 +35,22 @@ font-size: 60%; /*Controle das medidas rem*/
 
 #container {
     /*box model */
-    /*padding: 10px 40px 60px 5px; preenchimento em sentido horário, cima,direita,baixo e esquerda */
+   /* padding: 10px 40px 10px 5px ; preenchimento em sentido horário, cima,direita,baixo e esquerda */
     /*  podemos usar em apenas um padding ou margin, como no modelo acima, ou como no modelo abaixo */
-    /*padding-top: 10px;  EMCIMA
-    padding-bottom: 10px; EMBAIXO
-    padding-left: 10px; 
-    
-    padding-right: 10px;*/
-   /*padding: 50%;
-    margin: 90px;*/
+   /*padding-top: 10px;  EMCIMA */
+   /* padding-bottom: 40px; /* EMBAIXO */
+   /* padding-left: 40px; */ 
+   /* padding-right: 100px; */
+    padding: 40px;
+    margin: 60px;
+
+    width: 80px;
+    height: 300px;
 }
 
 html, 
 body {
-    height: 100vh; /*HEIGHT = ALTURA */
+    height: 50vh; /*HEIGHT = ALTURA */
 
 }
 body{
@@ -66,7 +68,7 @@ textarea {
 /*font: 500 1.6rem Poppins; PODEMOS FAZER DESSA FORMA OU DA FORMA ABAIXO*/
 font-weight: 500;  /*--PESO DA FONTE ---*/
 font-family: Poppins; /*---ESTILO DA FONTE*/
-font-size: 1.6rem; /*---TAMANHO DA FONTE -----*/
+font-size: 1.8rem; /*---TAMANHO DA FONTE -----*/
 color: var(--color-text-base);
 }
  
@@ -74,4 +76,11 @@ color: var(--color-text-base);
 width: 90vw; /*WIDTH = LARGURA*/
 max-width: 700px; /* LARGURA MÁXIMA */
 
+}
+
+
+@media (min-width: 700px) {
+    :root {
+        font-size: 62.5%; /* Todo 1rem vai ser relativo a 10px */ 
+    }
 }
